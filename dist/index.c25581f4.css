@@ -1,0 +1,65 @@
+.link {
+  text-transform: uppercase;
+  letter-spacing: .1175em;
+  word-spacing: .3em;
+  width: 5rem;
+  height: 5rem;
+  margin-top: 10px;
+  font: 300 1.55rem / 1.4 Josefin Sans;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.link__svg {
+  transform-box: fill-box;
+  fill: #2b3338;
+  stroke: #2b3338;
+  stroke-width: .05em;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  width: 100%;
+  height: auto;
+}
+
+.link__arrow {
+  transform-origin: 50%;
+  transition: transform .15s cubic-bezier(.32, 0, .67, 0);
+}
+
+.link:hover .link__arrow {
+  transition: transform .3s cubic-bezier(.33, 1, .68, 1);
+  transform: scale(1.1);
+}
+
+.link__arrow {
+  stroke-width: .075em;
+}
+
+.link__text {
+  transform-origin: 50%;
+  animation: 20s linear infinite rotateReverse;
+}
+
+.link:hover .link__text {
+  animation-play-state: paused;
+}
+
+.link--alt {
+  letter-spacing: 0;
+  word-spacing: 0;
+  font-size: 1.15rem;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateReverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/*# sourceMappingURL=index.c25581f4.css.map */
